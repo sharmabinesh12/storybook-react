@@ -1,0 +1,41 @@
+.pagination {
+  height: 40px;
+  display: inline-block;
+  box-shadow: 0 2px 10px 0 rgba(10, 10, 10, 0.05);
+  border: 1px solid #e7ecf0;
+  margin-bottom: 40px;
+  border-radius: 4px;
+  background-color: #fff;
+
+  &__button {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: 0;
+    vertical-align: middle;
+    border: none;
+    background-color: transparent;
+
+    &:not(:last-child) {
+      border-right: 1px solid #e7ecf0;
+    }
+
+    &--prev,
+    &--next {
+      background-repeat: no-repeat;
+      background-size: 30%;
+      background-position: center;
+    }
+
+    &--prev {
+      background-image: url(../../img/icons/arrow-prev.svg);
+    }
+
+    &--next {
+      // background-image: url(../../img/icons/arrow-next.svg);
+      background-image: url(../../img/icons/arrow-next.svg);
+    }
+  }
+}

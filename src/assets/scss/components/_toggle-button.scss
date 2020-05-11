@@ -1,0 +1,63 @@
+$checked-color: #33ac2e;
+$unchecked-color: #dde3e8;
+
+.toggle {
+  display: inline-block;
+  margin: 5px 0;
+  min-height: 20px;
+
+  &__checkbox {
+    position: absolute;
+    visibility: hidden;
+
+    &:disabled ~ label {
+      cursor: not-allowed;
+    }
+
+    &:checked ~ label {
+      &:after {
+        left: 18px;
+      }
+
+      &:before {
+        background: $checked-color;
+      }
+    }
+  }
+
+  label {
+    cursor: pointer;
+    position: relative;
+    padding-left: 50px;
+    line-height: 1.5;
+    min-height: 20px;
+    display: block;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      transition: all 0.3s;
+    }
+
+    &:before {
+      left: 0;
+      width: 36px;
+      height: 20px;
+      border-radius: 16px;
+      background: $unchecked-color;
+      vertical-align: middle;
+    }
+
+    &:after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      top: 2px;
+      left: 2px;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+  }
+}
+
