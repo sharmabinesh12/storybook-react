@@ -29,7 +29,7 @@
     &:checked {
       &~label:after {
         background-color: #2877ff;
-        background-image: url(../../../img/icons/check.svg);
+        background-image: url(../img/icons/check.svg);
         background-position: center;
         background-size: contain;
         opacity: 1;
@@ -37,7 +37,7 @@
       }
 
       &:hover~label:after {
-        background-image: url(../../../img/icons/remove.svg);
+        background-image: url(../img/icons/remove.svg);
       }
     }
   }
