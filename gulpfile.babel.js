@@ -6,7 +6,7 @@ const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
 
 function transformBabel() {
-  return src('src/**/*.js', {ignore: ['src/index.js', 'src/docs/**/*']})
+  return src('src/**/*.js', {ignore: ['src/index.js','src/stories/*', 'src/docs/**/*']})
     .pipe(babel())
     .pipe(dest('dist'));
 }

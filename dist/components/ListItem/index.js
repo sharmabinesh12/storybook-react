@@ -25,7 +25,13 @@ var ListItem = function ListItem(props) {
     onClick: function onClick() {
       return props.onClickLi(props.itemObj);
     }
-  }, /*#__PURE__*/_react.default.createElement("span", null, props.textValue));
+  }, /*#__PURE__*/_react.default.createElement("span", null, props.textValue), props.selectedId === props.itemObj.id ? /*#__PURE__*/_react.default.createElement("img", {
+    src: require('../../assets/img/icons/ic_arrow-right.svg'),
+    alt: "right arrow"
+  }) : /*#__PURE__*/_react.default.createElement("img", {
+    src: require('../../assets/img/icons/ic_arrow-right-grey.svg'),
+    alt: "right arrow"
+  }));
 };
 
 ListItem.propTypes = {

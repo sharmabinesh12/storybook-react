@@ -7,7 +7,7 @@
 	box-shadow: none;
 	display: flex;
 	font-size: 15px;
-	padding: 8px 6px 8px 10px;
+	padding: 9px 6px 9px 10px;
 	font-weight: 400;
 	cursor: pointer;
 	border-bottom: 1px solid #e0e0e0;
@@ -16,4 +16,13 @@
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+	display: flex;
+	justify-content: space-between;
+	img {
+		width: 10px;
+    height: 10px;
+    margin: 5px 0;
+    margin-left: 4px;
+    float: right;
+	}
 }

@@ -11,11 +11,11 @@ const ListItem = props => {
 			onClick={() => props.onClickLi(props.itemObj)}
 		>
 			<span>{props.textValue}</span>
-			{/* {props.selectedId === itemObj.id ? (
-				<img className="pull-right" src={ICONS.ARROW_RIGHT} />
+			{props.selectedId === props.itemObj.id ? (  
+				<img src={require('../../assets/img/icons/ic_arrow-right.svg')} alt="right arrow"/>
 			) : (
-					<img className="pull-right" src={BW_ICONS.ARROW_RIGHT} />
-				)} */}
+					<img src={require('../../assets/img/icons/ic_arrow-right-grey.svg')} alt="right arrow" /> 
+				)}
 		</li>
         
   );

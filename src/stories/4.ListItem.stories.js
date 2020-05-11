@@ -8,7 +8,7 @@ export default {
   component: ListItem,
 };
 
-storiesOf('Button', module)
+storiesOf('ListItem', module)
 	.add('default', () =>{
 		const listItems = [
 			{name:'list1',id:'1235'},
