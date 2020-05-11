@@ -1,0 +1,22 @@
+.loader {
+  &__symbol{
+    border: 3.5px solid white;
+    border-radius: 50%;
+    animation: spin 0.9s linear infinite;
+    width:60px;
+    height:60px;
+    border-right: 3.5px solid #2877ff;
+    border-left: 3.5px solid #2877ff;
+    border-bottom:  3.5px solid #2877ff;
+    display: inline-block;
+  }
+
+  &__text{
+    padding-top: 10px;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}
