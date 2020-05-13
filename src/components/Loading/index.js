@@ -20,11 +20,13 @@ const Loading = props => {
 
 Loading.propTypes = {
   description: PropTypes.string,
-  loading: PropTypes.bool
+  loading: PropTypes.bool,
+  styles:PropTypes.object
 };
 
 Loading.defaultProps = {
-  loading: false
+  loading: false,
+  styles:{color:'blue'}
 };
 
 export default Loading;

@@ -75,6 +75,12 @@ Object.defineProperty(exports, "ListItem", {
     return _ListItem.default;
   }
 });
+Object.defineProperty(exports, "Snackbar", {
+  enumerable: true,
+  get: function get() {
+    return _snackbar.default;
+  }
+});
 
 var _Button = _interopRequireDefault(require("../dist/components/Button"));
 
@@ -91,5 +97,7 @@ var _ToggleButton = _interopRequireDefault(require("../dist/components/ToggleBut
 var _Pagination = _interopRequireDefault(require("../dist/components/Pagination"));
 
 var _ListItem = _interopRequireDefault(require("../dist/components/ListItem"));
+
+var _snackbar = _interopRequireDefault(require("../dist/components/snackbar"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

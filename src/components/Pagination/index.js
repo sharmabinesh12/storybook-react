@@ -57,7 +57,7 @@ const Pagination = props => {
 
     let filter = {
       "skip": String((pageNumber-1) * LIST_SIZE),
-      "limit": LIST_SIZE
+      "limit": LIST_SIZE,
     }
 
     // if(props.dirtyStatus.__dirty) {
@@ -65,7 +65,7 @@ const Pagination = props => {
     // } else {
       // currentTempPageNumber = pageNumber;
       props.setListPageNumber(pageNumber);
-      props.handlePaginationList(filter);
+      props.handlePaginationList(filter,pageNumber);
     // }
 
   }
@@ -133,7 +133,7 @@ Pagination.propTypes = {
 
 Pagination.defaultProps = {
   maxCount:1,
-  pageNumber:2,
+  pageNumber:1,
   LIST_SIZE : 15,
   handlePaginationList:null,
   setListPageNumber:null

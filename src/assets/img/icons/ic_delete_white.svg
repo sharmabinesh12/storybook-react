@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 28 28" style="enable-background:new 0 0 28 28;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" width="28" height="28"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g id="Group_8937-9" class="st0">
+			<path id="Path_1126-8" class="st1" d="M8.8,7.4v-2C8.8,4.7,9.4,4,10.1,4c0,0,0,0,0.1,0H18c0.8,0,1.4,0.6,1.4,1.4v2"/>
+			<line id="Line_1287-8" class="st1" x1="4.2" y1="8.2" x2="23.8" y2="8.2"/>
+			<g transform="matrix(1, 0, 0, 1, 0, -354)">
+				<path id="Path_1127-16" class="st1" d="M6.5,362.7v13.5c0,0.9,0.7,1.7,1.7,1.7l0,0h11.7c0.9,0,1.7-0.8,1.7-1.7v-13.5"/>
+			</g>
+			<line id="Line_1288-8" class="st1" x1="10.3" y1="12.6" x2="10.3" y2="19.8"/>
+			<line id="Line_1289-8" class="st1" x1="14" y1="12.6" x2="14" y2="19.8"/>
+			<line id="Line_1290-8" class="st1" x1="17.8" y1="12.6" x2="17.8" y2="19.8"/>
+		</g>
+	</g>
+</g>
+</svg>

@@ -30,7 +30,8 @@ function Input(_ref) {
       onChange = _ref.onChange,
       errorMessage = _ref.errorMessage,
       onFocus = _ref.onFocus,
-      onBlur = _ref.onBlur;
+      onBlur = _ref.onBlur,
+      onKeyDown = _ref.onKeyDown;
 
   var renderLabel = function renderLabel(text, htmlFor) {
     if (text === undefined) return null;
@@ -58,7 +59,8 @@ function Input(_ref) {
     onChange: onChange,
     className: className,
     onFocus: onFocus,
-    onBlur: onBlur
+    onBlur: onBlur,
+    onKeyDown: onKeyDown
   }), /*#__PURE__*/_react.default.createElement("div", {
     className: "input__error-message"
   }, errorMessage));
@@ -81,7 +83,8 @@ Input.propTypes = {
   required: _propTypes.default.bool,
   label: _propTypes.default.string,
   errorMessage: _propTypes.default.string,
-  onChange: _propTypes.default.func
+  onChange: _propTypes.default.func,
+  onKeyDown: _propTypes.default.func
 };
 var _default = Input;
 exports.default = _default;

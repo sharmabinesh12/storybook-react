@@ -15,3 +15,23 @@
 	margin: 50px 0 0 50px;
 	max-width: 450px;
 }
+
+.form-box {
+	margin: 50px 0 0 50px;
+	max-width: 450px;
+	.input-bottom-border {
+		border:0;
+		outline: 0;
+		border-bottom: 1px solid black;
+		border-radius:0;
+		background-color: initial;
+		&:focus {
+			border-color:initial;
+			box-shadow: initial;
+		}
+	}
+}
+
+.snackbar-box {
+	margin: 50px 0 0 50px;
+}

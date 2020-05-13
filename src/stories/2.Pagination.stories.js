@@ -8,16 +8,14 @@ export default {
 };
 
 storiesOf('Pagination', module)
-  .add('default', () => (
+  .add('default', (state, setState) => (
     <div className="pagination-box">
       <Pagination 
 				maxCount={50}
-				pageNumber={2}
+				pageNumber={state.pageNumber}
 				LIST_SIZE = {15}
 				handlePaginationList={action('page click')}
-				setListPageNumber={ action('set page list')}				
+				setListPageNumber={ pageNumber => setState({ pageNumber })}				
       />
     </div>
-
-    
   ))

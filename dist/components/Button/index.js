@@ -18,7 +18,8 @@ function Button(_ref) {
       disabled = _ref.disabled,
       width = _ref.width,
       _ref$type = _ref.type,
-      type = _ref$type === void 0 ? 'button' : _ref$type;
+      type = _ref$type === void 0 ? 'button' : _ref$type,
+      icon = _ref.icon;
   var classes = ['button', size, color, width, className].toString().replace(/,+/g, ' ').trim();
   var button = type;
   return /*#__PURE__*/_react.default.createElement("button", {
@@ -26,7 +27,11 @@ function Button(_ref) {
     disabled: disabled,
     className: classes,
     onClick: onClick
-  }, text);
+  }, icon && /*#__PURE__*/_react.default.createElement("img", {
+    className: "float-left",
+    src: icon,
+    alt: "icon"
+  }), text);
 }
 
 var _default = Button;

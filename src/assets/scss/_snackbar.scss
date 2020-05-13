@@ -1,0 +1,168 @@
+.loader {
+	display: flex;
+	margin-right: 8px;
+	float: left;
+	&>img {
+		display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+		padding: 10px 10px;
+		box-sizing: border-box;
+	}
+}
+
+.snackbar-block {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+  left: 0;
+}
+
+.snackbar-wrapper {
+	/*width: 100%;
+		height: 100%;*/
+	position: relative;
+	z-index: 999999999999999; /* Add a z-index if needed */
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.snackbar {
+	/*display: none;  Hidden by default. Visible on click */
+	max-width: 800px; /* Set a default minimum width */
+	display: flex;
+	margin: auto; /* Divide value of min-width by 2 */
+	background-color: #1b75bb; /* Black background color */
+	color: #fff; /* White text color */
+	/*text-align: center;  Centered text */
+	border-radius: 2px; /* Rounded borders */
+	padding: 6px 12px; /* Padding */
+	position: fixed; /* Sit on top of the screen */
+
+	left: 0; /* Center the snackbar */
+	right: 0;
+	top: 0; /* 30px from the bottom */
+	box-shadow: 0 1px 50px #333333;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+
+.snackbar > p {
+	display: flex;
+	vertical-align: middle;
+	float: left;
+	font-size: 16px;
+	margin:0;
+	margin-right: auto;
+	margin-bottom: 0;
+	padding: 9px 0;
+	padding-right: 9px;
+}
+
+.snackbar-buttons {
+	display: flex;
+}
+
+.snackbar-buttons > .button {
+	font-family: "Montserrat-Medium", sans-serif;
+	min-width: 100px;
+	letter-spacing: 0.01em;
+	display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flexbox;
+		display: -o-flex;
+		display: flex;
+
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		-o-flex-direction: row;
+		flex-direction: row;
+
+	min-height: 38px;
+	color: #1b75bb;
+	vertical-align: middle;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-grid-row-align: center;
+	align-items: center;
+	text-align: center;
+	box-sizing: border-box;
+	white-space: nowrap;
+	font-weight: 500;
+	font-style: inherit;
+	font-variant: inherit;
+	font-family: inherit;
+	overflow: hidden;
+	font-size: 16px;
+	margin-right: 8px;
+	background: #fff;
+	border: 0;
+	border-radius: 3px;
+	padding: 6px 12px;
+}
+
+
+.snackbar-notification {
+	background-color: #1b75bb;
+	width: 100%;
+}
+
+.snackbar-success {
+	background-color: #5cb85c;
+	width: 100%;
+}
+
+.snackbar-warning {
+	background-color: #ec971f;
+	width: 100%;
+}
+
+.snackbar-danger {
+	background-color: #c9302c;
+	width: 100%;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+	from {
+		top: 0;
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadein {
+	from {
+		top: 0;
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeout {
+	from {
+		top: 30px;
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes fadeout {
+	from {
+		top: 30px;
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+/* The snackbar - END */

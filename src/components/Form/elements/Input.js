@@ -20,7 +20,8 @@ function Input({
   onChange,
   errorMessage,
   onFocus,
-  onBlur
+  onBlur,
+  onKeyDown
 }) {
   const renderLabel = (text, htmlFor) => {
     if (text === undefined) return null;
@@ -53,6 +54,7 @@ function Input({
         className={className}
         onFocus={onFocus}
         onBlur={onBlur}
+        onKeyDown={onKeyDown}
       />
       <div className="input__error-message">{errorMessage}</div>
     </div>
@@ -76,7 +78,8 @@ Input.propTypes = {
   required: PropTypes.bool,
   label: PropTypes.string,
   errorMessage: PropTypes.string,
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
+  onKeyDown: PropTypes.func
 };
 
 export default Input;

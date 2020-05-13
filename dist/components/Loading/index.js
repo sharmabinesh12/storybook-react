@@ -37,10 +37,14 @@ var Loading = function Loading(props) {
 
 Loading.propTypes = {
   description: _propTypes.default.string,
-  loading: _propTypes.default.bool
+  loading: _propTypes.default.bool,
+  styles: _propTypes.default.object
 };
 Loading.defaultProps = {
-  loading: false
+  loading: false,
+  styles: {
+    color: 'blue'
+  }
 };
 var _default = Loading;
 exports.default = _default;

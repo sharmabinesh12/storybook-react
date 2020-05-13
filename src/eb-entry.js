@@ -6,3 +6,4 @@ export { Input, Checkbox, Textarea } from '../dist/components/Form';
 export { default as ToggleButton } from '../dist/components/ToggleButton';
 export { default as Pagination } from '../dist/components/Pagination';
 export {default as ListItem } from '../dist/components/ListItem';
+export {default as Snackbar } from '../dist/components/snackbar';
