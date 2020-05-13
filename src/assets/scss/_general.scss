@@ -17,3 +17,31 @@ a {
 *:visited {
   outline: none;
 }
+
+
+
+.flash {
+  border: 1px solid #037a43;
+  background-color: #cdffc6;
+  padding: 8px;
+  display: none;
+  z-index: 9999;
+  top: 52px;
+  font-weight: 600;
+  max-width:400px;
+  position: fixed;
+  border-radius: 8px;
+  left: 50%;
+  -webkit-animation: slideIn 300ms forwards;
+  -moz-animation: slideIn 300ms forwards;
+  animation: slideIn 300ms forwards;
+  transform: translateX(-50%);
+}
+
+.flash-success{
+  color: #bb2424;
+}
+
+.flash-error{
+  color: #bb2424;
+}

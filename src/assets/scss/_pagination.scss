@@ -1,41 +1,41 @@
-.pagination {
-  height: 40px;
-  display: inline-block;
-  box-shadow: 0 2px 10px 0 rgba(10, 10, 10, 0.05);
-  border: 1px solid #e7ecf0;
-  margin-bottom: 40px;
-  border-radius: 4px;
+$boxShadow: 0px -2px 8px rgba(0, 0, 0, 0.2);
+.pagination-view-common {
+  padding: 10px;
   background-color: #fff;
-
-  &__button {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    box-sizing: border-box;
+  box-shadow: $boxShadow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ebebeb;
+  border-radius: 4px;
+  .inner-alignment {
+    display: flex;
+    align-items: center;
     cursor: pointer;
-    outline: 0;
-    vertical-align: middle;
-    border: none;
-    background-color: transparent;
-
-    &:not(:last-child) {
-      border-right: 1px solid #e7ecf0;
+    span {
+      font-size: 14px;
     }
-
-    &--prev,
-    &--next {
-      background-repeat: no-repeat;
-      background-size: 30%;
-      background-position: center;
+  }
+  .display-flex-row {
+    display: flex;
+  }
+  .input-box {
+    .input {
+      margin: 0;
     }
-
-    &--prev {
-      background-image: url(../img/icons/arrow-prev.svg);
-    }
-
-    &--next {
-      // background-image: url(../../img/icons/arrow-next.svg);
-      background-image: url(../img/icons/arrow-next.svg);
-    }
+  }
+  .page-input-field {
+    color: #000;
+    width: 40px;
+    height: 24px;
+    text-align: center;
+    border: 0;
+    border-radius: 3px;
+    margin-right: 4px;
+    padding: 0;
+    min-width: 40px;
+  }
+  .page-number-field {
+    line-height: 26px;
   }
 }

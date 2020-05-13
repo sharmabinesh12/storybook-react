@@ -5,7 +5,7 @@ import ListItem from '../components/ListItem';
 
 export default {
   title: 'ListItem',
-  component: ListItem,
+	component: ListItem,
 };
 
 storiesOf('ListItem', module)
@@ -15,7 +15,7 @@ storiesOf('ListItem', module)
 			{name:'List2', id:'1234'}
 		]
 		return(
-			<ul className="list-group">
+			<ul className="list-item-box">
 				{listItems.map((itemObj, i) => {
 					return(
 						<ListItem
@@ -29,13 +29,3 @@ storiesOf('ListItem', module)
 			</ul>
 		)
 	})
-  .add('selected Item', () => (
-		<ListItem
-			itemObj={{'name':'List2', 'id':'1234'}}
-			textValue='list2'
-			onClickLi={action('selected item')}
-			selectedId="1234"
-		/>
-  ))
-  
-
