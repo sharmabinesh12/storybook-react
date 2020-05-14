@@ -43,7 +43,7 @@ Loading.propTypes = {
 Loading.defaultProps = {
   loading: false,
   styles: {
-    color: 'blue'
+    color: 'rgb(0, 160, 174)'
   }
 };
 var _default = Loading;

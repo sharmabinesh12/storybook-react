@@ -26,7 +26,7 @@ Loading.propTypes = {
 
 Loading.defaultProps = {
   loading: false,
-  styles:{color:'blue'}
+  styles:{color:'rgb(0, 160, 174)'}
 };
 
 export default Loading;
