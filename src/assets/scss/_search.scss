@@ -1,0 +1,21 @@
+.search-view-common {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  position: relative;
+  input {
+    border: none;
+    outline: none;
+    width: 90%;
+    font-size: 15px;
+    padding-left: 12px;
+    background-color: #383e4b;
+    color: #cbcbcb;
+  }
+  .close-button {
+    float: right;
+  }
+  .search-button {
+    float: left;
+  }
+}

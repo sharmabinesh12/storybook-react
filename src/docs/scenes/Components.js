@@ -7,6 +7,7 @@ import ToggleButtonDocs from '../components/ToggleButton/ToggleButtonDocs';
 import PaginationDocs from '../components/Pagination/PaginationDocs';
 import LoadingDocs from '../components/Loading/LoadingDocs';
 import ListView from '../components/ListView';
+import ListHeader from '../components/ListHeader';
 function ComponentsScene() {
   return (
     <div className="container">
@@ -18,6 +19,7 @@ function ComponentsScene() {
       {/* <FormDocs /> */}
       {/* <ToggleButtonDocs /> */}
       {/* <PaginationDocs /> */}
+      <ListHeader/>
     </div>
   );
 }
