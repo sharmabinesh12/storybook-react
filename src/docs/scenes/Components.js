@@ -14,7 +14,7 @@ function ComponentsScene() {
       <LoadingDocs />
       <MenuButtonDocs />
       <ListView />
-      {/* <ModalDocs /> */}
+      <ModalDocs />
       {/* <ButtonDocs /> */}
       {/* <FormDocs /> */}
       {/* <ToggleButtonDocs /> */}
