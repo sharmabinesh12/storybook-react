@@ -18,6 +18,11 @@
 	text-overflow: ellipsis;
 	display: flex;
 	justify-content: space-between;
+	span {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
 	img {
 		width: 10px;
     height: 10px;
