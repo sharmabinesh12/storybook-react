@@ -19,7 +19,8 @@ function Button(_ref) {
       width = _ref.width,
       _ref$type = _ref.type,
       type = _ref$type === void 0 ? 'button' : _ref$type,
-      icon = _ref.icon;
+      icon = _ref.icon,
+      iconLast = _ref.iconLast;
   var classes = ['button', size, color, width, className].toString().replace(/,+/g, ' ').trim();
   var button = type;
   return /*#__PURE__*/_react.default.createElement("button", {
@@ -31,7 +32,11 @@ function Button(_ref) {
     className: "float-left",
     src: icon,
     alt: "icon"
-  }), text);
+  }), text, iconLast && /*#__PURE__*/_react.default.createElement("img", {
+    className: "float-left",
+    src: iconLast,
+    alt: "icon"
+  }));
 }
 
 var _default = Button;

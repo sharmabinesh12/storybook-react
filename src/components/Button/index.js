@@ -9,7 +9,8 @@ function Button({
   disabled,
   width,
   type = 'button',
-  icon
+  icon,
+  iconLast
 }) {
   const classes = ['button', size, color, width, className]
     .toString()
@@ -27,6 +28,7 @@ function Button({
     >
       {icon && <img className='float-left' src={icon} alt="icon"/>}
       {text}
+      {iconLast && <img className='float-left' src={iconLast} alt="icon"/>}
     </button>
   );
 }
