@@ -19,9 +19,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var Loading = function Loading(props) {
   var styles = _objectSpread(_objectSpread({}, props.styles), {}, {
-    borderRight: "3.5px solid ".concat(props.styles.color),
-    borderLeft: "3.5px solid ".concat(props.styles.color),
-    borderBottom: "3.5px solid ".concat(props.styles.color)
+    borderTop: "3px solid ".concat(props.styles.color)
   });
 
   var loaderDom = props.loading ? /*#__PURE__*/_react.default.createElement("div", {

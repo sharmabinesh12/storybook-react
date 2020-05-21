@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 const Loading = props => {
   let styles = {
     ...props.styles,
-    borderRight: `3.5px solid ${props.styles.color}`,
-    borderLeft: `3.5px solid ${props.styles.color}`,
-    borderBottom:  `3.5px solid ${props.styles.color}`
+    borderTop: `3px solid ${props.styles.color}`
   }
   const loaderDom = props.loading ? (
     <div className="loader">
