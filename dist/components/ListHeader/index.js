@@ -46,6 +46,7 @@ var ListViewHeader = function ListViewHeader(_ref) {
       onAddClick = _ref.onAddClick,
       onFilterClick = _ref.onFilterClick,
       onSearchInput = _ref.onSearchInput,
+      onSearchButtonCbB = _ref.onSearchButtonCbB,
       searchValue = _ref.searchValue;
 
   var _useState = (0, _react.useState)(0),
@@ -64,7 +65,8 @@ var ListViewHeader = function ListViewHeader(_ref) {
     className: "icon-alignment"
   }, searchIcon && /*#__PURE__*/_react.default.createElement("img", {
     onClick: function onClick() {
-      return setActiveSearch(true);
+      setActiveSearch(true);
+      onSearchButtonCbB(true);
     },
     src: searchIcon,
     alt: "search icon"
@@ -84,7 +86,8 @@ var ListViewHeader = function ListViewHeader(_ref) {
     placeholder: searchPlaceholder,
     searchValue: searchValue,
     closeButtonCB: function closeButtonCB() {
-      return setActiveSearch(false);
+      setActiveSearch(false);
+      onSearchButtonCbB(false);
     }
   }) : '');
 };

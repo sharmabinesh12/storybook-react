@@ -28,6 +28,7 @@ storiesOf('ListViewHeader', module)
 				filterIcon={filterIcon}
 				addIcon={addIcon}
 				searchValue = {'hello'}
+				onSearchButtonCbB={action('searchAction')}
 			></ListViewHeader>
     </div>
   ))

@@ -16,6 +16,7 @@ const ListViewHeader = ({
 	onAddClick,
 	onFilterClick,
 	onSearchInput,
+	onSearchButtonCbB,
 	searchValue
 }) => {
 	const [activeSearch, setActiveSearch] = useState(0);
@@ -32,7 +33,7 @@ const ListViewHeader = ({
 				<div className="icon-alignment">
 					{searchIcon &&
 						<img
-							onClick={()=>setActiveSearch(true)}
+							onClick={()=>{ setActiveSearch(true); onSearchButtonCbB(true);}}
 							src={searchIcon} alt="search icon" 
 						/>
 					}
@@ -58,7 +59,7 @@ const ListViewHeader = ({
 					onSearchInput={onSearchInput}
 					placeholder={searchPlaceholder}
 					searchValue={searchValue}
-					closeButtonCB = {()=>setActiveSearch(false) }
+					closeButtonCB = {()=>{setActiveSearch(false); onSearchButtonCbB(false) }}
 				/>
 			):''}
 		</div>
