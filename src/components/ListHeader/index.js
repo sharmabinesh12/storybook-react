@@ -43,6 +43,7 @@ const ListViewHeader = ({
 						<img
 							onClick={onFilterClick}
 							src={filterIcon} 
+							id="filter"
 							alt="filter icon"
 							title={filterTitle}
 						/>

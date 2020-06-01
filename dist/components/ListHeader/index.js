@@ -75,6 +75,7 @@ var ListViewHeader = function ListViewHeader(_ref) {
   }), filterIcon && /*#__PURE__*/_react.default.createElement("img", {
     onClick: onFilterClick,
     src: filterIcon,
+    id: "filter",
     alt: "filter icon",
     title: filterTitle
   }), addIcon && /*#__PURE__*/_react.default.createElement("img", {
