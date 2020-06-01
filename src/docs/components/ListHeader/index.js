@@ -7,6 +7,9 @@ import addIcon from '../../assets/img/icons/add-24px.svg';
 import filterIcon from '../../assets/img/icons/filter.svg';
 class ListHeaderDoc extends React.Component {
 
+	onSearchButtonCB = flag => {
+	 console.log("called",flag)
+	}
 	render(){
 		return(
 			<div style={{maxWidth:'350px'}}>
@@ -20,6 +23,7 @@ class ListHeaderDoc extends React.Component {
 					searchIcon={searchIcon}
 					filterIcon={filterIcon}
 					addIcon={addIcon}
+					onSearchButtonCB={this.onSearchButtonCB}
 				>
 					 {/* <div style={this.state.isFilterOpen ? {display:'block'}:{display:'none'}} id="filterId">
 						<Filter 

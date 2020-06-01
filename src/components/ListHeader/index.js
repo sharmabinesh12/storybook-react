@@ -9,6 +9,7 @@ const ListViewHeader = ({
 	headText,
 	searchPlaceholder,
 	addTitle,
+	filterTitle,
 	headerIcon,
 	searchIcon,
 	filterIcon,
@@ -17,7 +18,8 @@ const ListViewHeader = ({
 	onFilterClick,
 	onSearchInput,
 	onSearchButtonCB,
-	searchValue
+	searchValue,
+	children
 }) => {
 	const [activeSearch, setActiveSearch] = useState(0);
 
@@ -40,7 +42,9 @@ const ListViewHeader = ({
 					{filterIcon &&
 						<img
 							onClick={onFilterClick}
-							src={filterIcon} alt="filter icon"
+							src={filterIcon} 
+							alt="filter icon"
+							title={filterTitle}
 						/>
 					}
 					{addIcon &&
@@ -62,18 +66,22 @@ const ListViewHeader = ({
 					closeButtonCB = {()=>{setActiveSearch(false); onSearchButtonCB(false) }}
 				/>
 			):''}
+
+			{children}
 		</div>
 	);
 }
 
 ListViewHeader.propTypes = {
 	SearchLogo:PropTypes.string,
+	filterTitle : PropTypes.string
 	
 };
 
 ListViewHeader.defaultProps = {
 	SearchLogo : '',
-	
+	filterTitle:'filter',
+	children : null
 };
 
 export default ListViewHeader;
