@@ -39,6 +39,7 @@ var ListViewHeader = function ListViewHeader(_ref) {
   var headText = _ref.headText,
       searchPlaceholder = _ref.searchPlaceholder,
       addTitle = _ref.addTitle,
+      filterTitle = _ref.filterTitle,
       headerIcon = _ref.headerIcon,
       searchIcon = _ref.searchIcon,
       filterIcon = _ref.filterIcon,
@@ -47,7 +48,8 @@ var ListViewHeader = function ListViewHeader(_ref) {
       onFilterClick = _ref.onFilterClick,
       onSearchInput = _ref.onSearchInput,
       onSearchButtonCB = _ref.onSearchButtonCB,
-      searchValue = _ref.searchValue;
+      searchValue = _ref.searchValue,
+      children = _ref.children;
 
   var _useState = (0, _react.useState)(0),
       _useState2 = _slicedToArray(_useState, 2),
@@ -73,7 +75,8 @@ var ListViewHeader = function ListViewHeader(_ref) {
   }), filterIcon && /*#__PURE__*/_react.default.createElement("img", {
     onClick: onFilterClick,
     src: filterIcon,
-    alt: "filter icon"
+    alt: "filter icon",
+    title: filterTitle
   }), addIcon && /*#__PURE__*/_react.default.createElement("img", {
     onClick: onAddClick,
     title: addTitle,
@@ -89,14 +92,17 @@ var ListViewHeader = function ListViewHeader(_ref) {
       setActiveSearch(false);
       onSearchButtonCB(false);
     }
-  }) : '');
+  }) : '', children);
 };
 
 ListViewHeader.propTypes = {
-  SearchLogo: _propTypes.default.string
+  SearchLogo: _propTypes.default.string,
+  filterTitle: _propTypes.default.string
 };
 ListViewHeader.defaultProps = {
-  SearchLogo: ''
+  SearchLogo: '',
+  filterTitle: 'filter',
+  children: null
 };
 var _default = ListViewHeader;
 exports.default = _default;
