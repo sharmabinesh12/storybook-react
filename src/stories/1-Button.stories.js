@@ -34,8 +34,19 @@ storiesOf('Button', module)
         onClick={action('default')}
       />
     </div>
-
-    
+  ))
+  .add('button with iconn both side', () => (
+    <div className="button-box">
+      <Button 
+        key = 'with icon'
+        text = 'with icons'
+        color = 'red'
+        icon = {require('./img/add-24px.svg')}
+        iconLast = {require('./img/ic_entity.svg')}
+        size='big'
+        onClick={action('default')}
+      />
+    </div>
   ))
   .add('big-disabled', () => (
     <div className="button-box">
