@@ -11,7 +11,8 @@ function Button({
   type = 'button',
   icon,
   iconLast,
-  title
+  title,
+  style
 }) {
   const classes = ['button', size, color, width, className]
     .toString()
@@ -23,6 +24,7 @@ function Button({
   return (
     <button
       type={button}
+      style={style}
       disabled={disabled}
       className={classes}
       onClick={onClick}
