@@ -32,10 +32,10 @@
   }
 
   &:disabled {
-    background: #eaeef6;
-    border-color: #eaeef6;
+    background: grey;
+    border-color: grey;
     cursor: not-allowed;
-    color: #90a1b5;
+    color: #fff;
   }
 
   &.fullwidth {
