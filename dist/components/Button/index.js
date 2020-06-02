@@ -22,7 +22,8 @@ function Button(_ref) {
       icon = _ref.icon,
       iconLast = _ref.iconLast,
       title = _ref.title,
-      style = _ref.style;
+      style = _ref.style,
+      id = _ref.id;
   var classes = ['button', size, color, width, className].toString().replace(/,+/g, ' ').trim();
   var button = type;
   return /*#__PURE__*/_react.default.createElement("button", {
@@ -31,7 +32,8 @@ function Button(_ref) {
     disabled: disabled,
     className: classes,
     onClick: onClick,
-    title: title
+    title: title,
+    id: id
   }, icon && /*#__PURE__*/_react.default.createElement("img", {
     className: "float-left",
     src: icon,
