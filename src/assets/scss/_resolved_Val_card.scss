@@ -1,0 +1,69 @@
+.right-inner-single {
+	margin: 10px;
+	border-radius: 3px;
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+	width: calc(100% - 20px);
+	.right-inner-list {
+		width: calc(100% - 28px);
+		padding:10px;
+		.name-recipient {
+			font-weight: bold;
+		}
+		input[type="text"] {
+			border:0;
+			outline: none;
+			padding-left: 5px;
+			padding-right: 5px;
+			width: 100%;
+
+		}
+		.resolved-value {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			width: 100%;
+			min-height: 20px;
+		}
+	}        
+	.edit {
+		padding-right: 10px;
+		width: 28px;
+		box-sizing: border-box;
+		.edit-icon {
+			width: 18px;
+			height: 18px;
+			cursor: pointer;
+			margin-bottom: 7px;
+		}
+		.save-icon {
+			cursor: pointer;
+		}
+		.cross-icon {
+			position: relative;
+			width: 14px;
+			height: 14px;
+			opacity: 0.5;
+			cursor: pointer;
+			&:hover {
+				opacity: 1;
+			}
+			&:before, &:after {
+				position: absolute;
+				left: 10px;
+				content: ' ';
+				height: 14px;
+				width: 2px;
+				background-color: #000;
+			}
+			&:before {
+				transform: rotate(45deg);
+			}
+			&:after {
+				transform: rotate(-45deg);
+			}
+
+		}
+	}
+}

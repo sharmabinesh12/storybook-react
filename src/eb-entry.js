@@ -8,3 +8,4 @@ export { default as Pagination } from '../dist/components/Pagination';
 export {default as ListItem } from '../dist/components/ListItem';
 export {default as Snackbar } from '../dist/components/snackbar';
 export {default as ListViewHeader} from '../dist/components/ListHeader';
+export {default as RecognizedValueCard } from '../dist/components/recognizedValueCard';
