@@ -25,7 +25,7 @@ var RecognizedValueCard = function RecognizedValueCard(_ref) {
       Save_Logo = _ref.Save_Logo,
       Edit_Logo = _ref.Edit_Logo;
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "right-inner-single",
+    className: "right-inner-common",
     style: {
       backgroundColor: background,
       color: color

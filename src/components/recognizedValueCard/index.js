@@ -15,7 +15,7 @@ const RecognizedValueCard = ({
 	Edit_Logo
 }) => {
   return (
-		<div className="right-inner-single" style={{ backgroundColor: background, color: color }}>
+		<div className="right-inner-common" style={{ backgroundColor: background, color: color }}>
 			<div className="right-inner-list">
 				<div className="name-recipeint">{displayName}:</div>
 				{isEdit ?
