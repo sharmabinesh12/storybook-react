@@ -30,7 +30,7 @@ const RecognizedValueCard = ({
 
 			<div className="edit">
 				{isEdit === 'NA' ?
-						<div className="cross-icon" onClick={handleDeleteParamConfirmation} style={!resolved ? { opacity: '0.2', pointerEvents: 'none', cursor: 'none' } : {}}></div>
+						<div className="cross-icon" onClick={handleDeleteParamConfirmation}></div>
 					:
 						isEdit ?
 							<img src={Save_Logo} className="save-icon" alt="save icon" onClick={handleEditDone} />
@@ -51,7 +51,7 @@ RecognizedValueCard.propTypes = {
 
 RecognizedValueCard.defaultProps = {
 	handleEditParamChange : null,
-	resolved : 'NA'
+	isEdit : 'NA'
 };
 
 export default RecognizedValueCard;

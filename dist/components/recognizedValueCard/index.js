@@ -52,12 +52,7 @@ var RecognizedValueCard = function RecognizedValueCard(_ref) {
     className: "edit"
   }, isEdit === 'NA' ? /*#__PURE__*/_react.default.createElement("div", {
     className: "cross-icon",
-    onClick: handleDeleteParamConfirmation,
-    style: !resolved ? {
-      opacity: '0.2',
-      pointerEvents: 'none',
-      cursor: 'none'
-    } : {}
+    onClick: handleDeleteParamConfirmation
   }) : isEdit ? /*#__PURE__*/_react.default.createElement("img", {
     src: Save_Logo,
     className: "save-icon",
@@ -84,7 +79,7 @@ RecognizedValueCard.propTypes = {
 };
 RecognizedValueCard.defaultProps = {
   handleEditParamChange: null,
-  resolved: 'NA'
+  isEdit: 'NA'
 };
 var _default = RecognizedValueCard;
 exports.default = _default;

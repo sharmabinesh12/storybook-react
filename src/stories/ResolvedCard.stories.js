@@ -63,18 +63,12 @@ storiesOf('RecognizedValueCard', module)
 				background = {'#ddd000'}
 				color = {'#fff' }
 				displayName = {'city destination'}
-				isEdit = {false}
 				value = {'Bangalore'}
-				resolved = {false}
-				handleEditParamChange = {action('handle edit param change')} 
-				handleEditDone = {action('handle edit param done')} 
-				editResolvedParam = {action('handle edit param')}
 				handleDeleteParamConfirmation = {action('param deleted')}
-				Save_Logo = { Save_Logo}
+				className="nes-resolved"
 			/>
     </div>
 	)) 
-
 
 	
 
