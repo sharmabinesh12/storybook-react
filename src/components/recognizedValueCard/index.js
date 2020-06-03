@@ -30,7 +30,7 @@ const RecognizedValueCard = ({
 					<img src={Save_Logo} className="save-icon" alt="save icon" onClick={handleEditDone} />
 					:
 					<>
-						<img src={Edit_Logo} className="edit-icon" alt="edit icon" onClick={editResolvedParam} />
+						{Edit_Logo && <img src={Edit_Logo} className="edit-icon" alt="edit icon" onClick={editResolvedParam} />}
 						<div className="cross-icon" onClick={handleDeleteParamConfirmation} style={!resolved ? { opacity: '0.2', pointerEvents: 'none', cursor: 'none' } : {}}></div>
 					</>
 				}

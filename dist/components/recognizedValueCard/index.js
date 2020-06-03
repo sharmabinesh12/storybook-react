@@ -54,7 +54,7 @@ var RecognizedValueCard = function RecognizedValueCard(_ref) {
     className: "save-icon",
     alt: "save icon",
     onClick: handleEditDone
-  }) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("img", {
+  }) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, Edit_Logo && /*#__PURE__*/_react.default.createElement("img", {
     src: Edit_Logo,
     className: "edit-icon",
     alt: "edit icon",
