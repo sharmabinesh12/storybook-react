@@ -35,7 +35,7 @@ var RecognizedValueCard = function RecognizedValueCard(_ref) {
     className: "right-inner-list"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "name-recipeint"
-  }, displayName, ":"), isEdit ? /*#__PURE__*/_react.default.createElement("input", {
+  }, displayName, ":"), isEdit === 'NA' ? /*#__PURE__*/_react.default.createElement("div", null, value) : isEdit ? /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
     value: value,
     onChange: handleEditParamChange,
@@ -50,7 +50,15 @@ var RecognizedValueCard = function RecognizedValueCard(_ref) {
     title: value
   }, value) : /*#__PURE__*/_react.default.createElement("div", null, "NA")), /*#__PURE__*/_react.default.createElement("div", {
     className: "edit"
-  }, isEdit ? /*#__PURE__*/_react.default.createElement("img", {
+  }, isEdit === 'NA' ? /*#__PURE__*/_react.default.createElement("div", {
+    className: "cross-icon",
+    onClick: handleDeleteParamConfirmation,
+    style: !resolved ? {
+      opacity: '0.2',
+      pointerEvents: 'none',
+      cursor: 'none'
+    } : {}
+  }) : isEdit ? /*#__PURE__*/_react.default.createElement("img", {
     src: Save_Logo,
     className: "save-icon",
     alt: "save icon",
@@ -75,7 +83,8 @@ RecognizedValueCard.propTypes = {
   handleEditParamChange: _propTypes.default.func
 };
 RecognizedValueCard.defaultProps = {
-  handleEditParamChange: null
+  handleEditParamChange: null,
+  resolved: 'NA'
 };
 var _default = RecognizedValueCard;
 exports.default = _default;

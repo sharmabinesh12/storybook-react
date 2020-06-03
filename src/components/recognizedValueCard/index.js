@@ -19,21 +19,26 @@ const RecognizedValueCard = ({
 		<div className={`right-inner-common ${className}`} style={{ backgroundColor: background, color: color }}>
 			<div className="right-inner-list">
 				<div className="name-recipeint">{displayName}:</div>
-				{isEdit ?
-					<input type="text" value={value} onChange={handleEditParamChange} placeholder="Enter new value" style={{ backgroundColor: background, color: color, borderBottom: '1px solid #000' }} />
-					:
-					resolved ? <div className="resolved-value" title={value}>{value}</div> : <div>NA</div>
+				{isEdit === 'NA' ?
+					<div>{value}</div>
+					: isEdit ? 
+						<input type="text" value={value} onChange={handleEditParamChange} placeholder="Enter new value" style={{ backgroundColor: background, color: color, borderBottom: '1px solid #000' }} />
+						:
+						resolved ? <div className="resolved-value" title={value}>{value}</div> : <div>NA</div>
 				}
 			</div>
 
 			<div className="edit">
-				{isEdit ?
-					<img src={Save_Logo} className="save-icon" alt="save icon" onClick={handleEditDone} />
-					:
-					<>
-						{Edit_Logo && <img src={Edit_Logo} className="edit-icon" alt="edit icon" onClick={editResolvedParam} />}
+				{isEdit === 'NA' ?
 						<div className="cross-icon" onClick={handleDeleteParamConfirmation} style={!resolved ? { opacity: '0.2', pointerEvents: 'none', cursor: 'none' } : {}}></div>
-					</>
+					:
+						isEdit ?
+							<img src={Save_Logo} className="save-icon" alt="save icon" onClick={handleEditDone} />
+							:
+							<>
+								{Edit_Logo && <img src={Edit_Logo} className="edit-icon" alt="edit icon" onClick={editResolvedParam} />}
+								<div className="cross-icon" onClick={handleDeleteParamConfirmation} style={!resolved ? { opacity: '0.2', pointerEvents: 'none', cursor: 'none' } : {}}></div>
+							</>
 				}
 			</div>
 		</div>
@@ -41,11 +46,12 @@ const RecognizedValueCard = ({
 };
 
 RecognizedValueCard.propTypes = {
-  handleEditParamChange : PropTypes.func
+	handleEditParamChange : PropTypes.func,
 };
 
 RecognizedValueCard.defaultProps = {
-  handleEditParamChange : null
+	handleEditParamChange : null,
+	resolved : 'NA'
 };
 
 export default RecognizedValueCard;
