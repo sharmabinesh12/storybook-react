@@ -12,10 +12,11 @@ const RecognizedValueCard = ({
 	editResolvedParam,
 	handleDeleteParamConfirmation,
 	Save_Logo,
-	Edit_Logo
+	Edit_Logo,
+	className
 }) => {
   return (
-		<div className="right-inner-common" style={{ backgroundColor: background, color: color }}>
+		<div className={`right-inner-common ${className}`} style={{ backgroundColor: background, color: color }}>
 			<div className="right-inner-list">
 				<div className="name-recipeint">{displayName}:</div>
 				{isEdit ?

@@ -23,9 +23,10 @@ var RecognizedValueCard = function RecognizedValueCard(_ref) {
       editResolvedParam = _ref.editResolvedParam,
       handleDeleteParamConfirmation = _ref.handleDeleteParamConfirmation,
       Save_Logo = _ref.Save_Logo,
-      Edit_Logo = _ref.Edit_Logo;
+      Edit_Logo = _ref.Edit_Logo,
+      className = _ref.className;
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "right-inner-common",
+    className: "right-inner-common ".concat(className),
     style: {
       backgroundColor: background,
       color: color
