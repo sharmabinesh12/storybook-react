@@ -50,8 +50,7 @@ RecognizedValueCard.propTypes = {
 };
 
 RecognizedValueCard.defaultProps = {
-	handleEditParamChange : null,
-	isEdit : 'NA'
+	handleEditParamChange : null
 };
 
 export default RecognizedValueCard;
