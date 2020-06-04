@@ -1,20 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-const ListItem = props => {
-	var selectedStyle = props.selectedId === props.itemObj.id ? { background: "#00a0ae", color: "#fff", fontWeight: "700" }: {};
+const ListItem = ({
+	itemObj,
+	textValue,
+	onClickLi,
+	selectedId,
+	activeIcon,
+	arrowIcon,
+	activeBGColor,
+	activeColor 
+
+}) => {
+	var selectedStyle = selectedId === itemObj.id ? { background: activeBGColor, color: activeColor, fontWeight: "700" }: {};
   return (
 		<li
-			title={props.textValue}
+			title={textValue}
 			className="list-box-common"
 			style={selectedStyle}
-			key={props.itemObj.id}
-			onClick={() => props.onClickLi(props.itemObj)}
+			key={itemObj.id}
+			onClick={() => onClickLi(itemObj)}
 		>
-			<span>{props.textValue}</span>
-			{props.selectedId === props.itemObj.id ? (  
-				<img src={require('../../assets/img/icons/ic_arrow-right.svg')} alt="right arrow"/>
+			<span>{textValue}</span>
+			{selectedId === itemObj.id ? (  
+				<img src={activeIcon} alt="right arrow"/>
 			) : (
-					<img src={require('../../assets/img/icons/ic_arrow-right-grey.svg')} alt="right arrow" /> 
+					<img src={arrowIcon} alt="right arrow" /> 
 				)}
 		</li>
         

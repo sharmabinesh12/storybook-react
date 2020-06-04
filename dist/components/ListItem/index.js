@@ -11,25 +11,33 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var ListItem = function ListItem(props) {
-  var selectedStyle = props.selectedId === props.itemObj.id ? {
-    background: "#00a0ae",
-    color: "#fff",
+var ListItem = function ListItem(_ref) {
+  var itemObj = _ref.itemObj,
+      textValue = _ref.textValue,
+      onClickLi = _ref.onClickLi,
+      selectedId = _ref.selectedId,
+      activeIcon = _ref.activeIcon,
+      arrowIcon = _ref.arrowIcon,
+      activeBGColor = _ref.activeBGColor,
+      activeColor = _ref.activeColor;
+  var selectedStyle = selectedId === itemObj.id ? {
+    background: activeBGColor,
+    color: activeColor,
     fontWeight: "700"
   } : {};
   return /*#__PURE__*/_react.default.createElement("li", {
-    title: props.textValue,
+    title: textValue,
     className: "list-box-common",
     style: selectedStyle,
-    key: props.itemObj.id,
+    key: itemObj.id,
     onClick: function onClick() {
-      return props.onClickLi(props.itemObj);
+      return onClickLi(itemObj);
     }
-  }, /*#__PURE__*/_react.default.createElement("span", null, props.textValue), props.selectedId === props.itemObj.id ? /*#__PURE__*/_react.default.createElement("img", {
-    src: require('../../assets/img/icons/ic_arrow-right.svg'),
+  }, /*#__PURE__*/_react.default.createElement("span", null, textValue), selectedId === itemObj.id ? /*#__PURE__*/_react.default.createElement("img", {
+    src: activeIcon,
     alt: "right arrow"
   }) : /*#__PURE__*/_react.default.createElement("img", {
-    src: require('../../assets/img/icons/ic_arrow-right-grey.svg'),
+    src: arrowIcon,
     alt: "right arrow"
   }));
 };

@@ -2,7 +2,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import ListItem from '../components/ListItem';
-
 export default {
   title: 'ListItem',
 	component: ListItem,
@@ -23,6 +22,10 @@ storiesOf('ListItem', module)
 							textValue={itemObj.name}
 							onClickLi={action('clicking list')}
 							selectedId="1234"
+							activeIcon={require('./img/ic_arrow-right.svg')}
+							arrowIcon ={require('./img/ic_arrow-right-grey.svg')}
+							activeBGColor={"#00a0ae"}
+							activeColor = {"#fff"}
 						/>
 					)})
 				}
