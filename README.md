@@ -18,7 +18,7 @@ Open [http://localhost:3100](http://localhost:3100) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `npm run storyboo-build`
+### `npm run storybook-build`
 
 Builds the storybook for production to the `storybook-static` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.

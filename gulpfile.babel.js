@@ -12,7 +12,7 @@ function transformBabel() {
 }
 
 function transformEbEntry() {
-  return src('src/eb-entry.js')
+  return src('src/lib-entry.js')
     .pipe(babel())
     .pipe(rename('index.js'))
     .pipe(dest('dist/'));
