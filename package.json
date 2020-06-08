@@ -14,8 +14,8 @@
     "yargs-parser": "^18.1.2"
   },
   "scripts": {
-    "start": "PORT=3500 react-scripts start",
-    "storybook": "start-storybook -p 9009 -s public",
+    "start": "PORT=3100 react-scripts start",
+    "storybook": "start-storybook -p  3100 -s public",
     "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {

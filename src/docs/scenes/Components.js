@@ -6,20 +6,16 @@ import FormDocs from '../components/Form/FormDocs';
 import ToggleButtonDocs from '../components/ToggleButton/ToggleButtonDocs';
 import PaginationDocs from '../components/Pagination/PaginationDocs';
 import LoadingDocs from '../components/Loading/LoadingDocs';
-import ListView from '../components/ListView';
-import ListHeader from '../components/ListHeader';
 function ComponentsScene() {
   return (
     <div className="container">
       <LoadingDocs />
       <MenuButtonDocs />
-      <ListView />
       <ModalDocs />
-      {/* <ButtonDocs /> */}
-      {/* <FormDocs /> */}
-      {/* <ToggleButtonDocs /> */}
-      {/* <PaginationDocs /> */}
-      <ListHeader/>
+      <ButtonDocs />
+      <FormDocs />
+      <ToggleButtonDocs />
+      <PaginationDocs />
     </div>
   );
 }
