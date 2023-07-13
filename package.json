@@ -10,7 +10,7 @@
     "markdown-to-jsx": "^6.11.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "~3.4.1",
+    "react-scripts": "~5.0.1",
     "yargs-parser": "^18.1.2"
   },
   "scripts": {
@@ -48,8 +48,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0",
-    "node-sass": "^4.14.1",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^9.0.0",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1"
   }
